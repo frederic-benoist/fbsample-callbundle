@@ -82,7 +82,7 @@ class FbSample_CallBundle extends Module
         $bundle = str_replace("/", "\\", $bundle);
         $newBundle = "new {$bundle}(),";
 
-        $appContent = file_get_contents($appKernelFileAndPath);
+        $appContent = Tools::file_get_contents($appKernelFileAndPath);
         $pattern = '/\$bundles\s?=\s?array\((.*?)\);/is';
         preg_match($pattern, $appContent, $matches);
 
@@ -111,7 +111,7 @@ class FbSample_CallBundle extends Module
     {
         $bundle = str_replace("/", "\\", $bundle);
 
-        $appContent = file_get_contents($appKernelFileAndPath);
+        $appContent = Tools::file_get_contents($appKernelFileAndPath);
         $pattern = '/\$bundles\s?=\s?array\((.*?)\);/is';
         preg_match($pattern, $appContent, $matches);
 
@@ -144,7 +144,7 @@ class FbSample_CallBundle extends Module
         $routingCfgFileAndPath = _PS_ROOT_DIR_.'/app/config/routing.yml';
         $currentValue = Yaml::parseFile($routingCfgFileAndPath);
         if (!isset($currentValue[$routeRcName])) {
-            $appContent = file_get_contents($routingCfgFileAndPath);
+            $appContent = Tools::file_get_contents($routingCfgFileAndPath);
             $appContent = rtrim($appContent, "\n")."\n";
             $appContent .= "\n"
                     .$routeRcName.':'."\n"
@@ -166,7 +166,7 @@ class FbSample_CallBundle extends Module
         $routingCfgFileAndPath = _PS_ROOT_DIR_.'/app/config/routing.yml';
         $currentValue = Yaml::parseFile($routingCfgFileAndPath);
         if (isset($currentValue[$routeRcName])) {
-            $appContent = file_get_contents($routingCfgFileAndPath);
+            $appContent = Tools::file_get_contents($routingCfgFileAndPath);
             $cfgLines = explode("\n", $appContent);
             $newContent = '';
             foreach ($cfgLines as $cfgLine) {
