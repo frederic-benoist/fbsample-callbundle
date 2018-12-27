@@ -1,0 +1,4 @@
+/* Remove bottom padding from PrestaShop menu */
+.main-menu{padding-bottom: 0 !important}
+/* Add bottom padding to Bundle menu */
+.main-menu.menu-training{padding-bottom: 85.008px !important}
