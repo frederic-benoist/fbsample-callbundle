@@ -35,8 +35,6 @@ To simplify the installation of the module files, we will use the [PrestaSpirit]
     cd prestashop_root_directory
     php bin/console prestashop:module install fbsample_callbundle
     ```
-    >`Use php `**`app/console`**` instead of php `**`bin/console`**` for versions prior to `**`1.7.4`**
-
 
 >`Use php `**`app/console`**` instead of php `**`bin/console`**` for versions prior to `**`1.7.4`**
 
