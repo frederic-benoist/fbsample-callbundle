@@ -1,5 +1,5 @@
 /**
- * 2007-2018 Frédéric BENOIST
+ * 2007-2019 Frédéric BENOIST
  *
  * NOTICE OF LICENSE
  *
@@ -12,10 +12,10 @@
  * to license@prestashop.com so we can send you a copy immediately.
  *
  *  @author    Frédéric BENOIST
- *  @copyright 2013-2018 Frédéric BENOIST <https://www.fbenoist.com/>
+ *  @copyright 2013-2019 Frédéric BENOIST <https://www.fbenoist.com/>
  *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
- 
+
  /* Remove bottom padding from PrestaShop menu */
 .main-menu{padding-bottom: 0 !important}
 /* Add bottom padding to Bundle menu */
